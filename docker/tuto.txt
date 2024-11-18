@@ -1,0 +1,19 @@
+#
+# Application Test Prometheurs grafana
+# https://medium.com/@hsahu615/monitoring-your-spring-boot-application-using-grafana-and-prometheus-6516db08fec8
+#
+
+#Lancer le docker compose 
+docker-compose up 
+
+#Tester le scrapping du service
+http://localhost:8080/actuator/prometheus
+
+#Tester le server prometheus
+http://localhost:9090
+
+#Logiciel grafana 
+http://localhost:3000
+
+#Mettre source 
+http://prometheus:9090

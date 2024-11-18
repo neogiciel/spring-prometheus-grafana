@@ -1,0 +1,30 @@
+#scrape_configs:
+#  - job_name: 'MyAppMetrics'
+#    metrics_path: '/actuator/prometheus'
+#    scrape_interval: 3s
+#    static_configs:
+#      - targets: ['host.docker.internal:8081']
+#        labels:
+#          application: 'Demo Boot Application'
+
+# Requires prometheus 2.X
+global:
+  scrape_interval:     2s # Set the scrape interval every 2 seconds. The default is every 1 minute.
+  evaluation_interval: 2s # Evaluate rules every 2 seconds. The default is every 1 minute.
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+  - static_configs:
+    - targets: ['localhost:9093']
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any time series scraped from this config.
+  - job_name: 'springboot app'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+    - targets: ['localhost:8080']
+      labels:
+       application: 'Test Spring Boot'

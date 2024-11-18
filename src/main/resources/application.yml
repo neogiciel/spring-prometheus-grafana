@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-prometheus-grafana
+  output:
+    ansi:
+      enabled:ALWAYS
+server:
+  port: 8080
+
+#log
+logging:
+    pattern:
+      console: "%d{yyyy-MM-dd HH:mm:ss} - %cyan(%msg%n)"
+
+#prometheues
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
