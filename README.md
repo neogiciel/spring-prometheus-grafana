@@ -3,7 +3,7 @@
 <table>
   <tr>
     <td><img src="https://blog.mossroy.fr/wp-content/uploads/2019/09/spring-boot-logo.png" alt="drawing" height="280px"/></td>
-    <td><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/rabbitmq_logo_icon_170812.png" alt="drawing" height="280px"/></td>
+    <td><img src="[https://cdn.icon-icons.com/icons2/2699/PNG/512/rabbitmq_logo_icon_170812.png](https://commons.wikimedia.org/wiki/File:Grafana_logo.svg)" alt="drawing" height="280px"/></td>
   </tr>
 </table>
 
