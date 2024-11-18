@@ -9,7 +9,7 @@
 
 ## Informations Générales
 ***
-Mise en place d'une  broker Rabbit MQ permettan la gestion de message Asynchrone
+Mise en place d'un outil de surveillance applicative via prometheus et grafana
 
 ## Technologies
 ***
